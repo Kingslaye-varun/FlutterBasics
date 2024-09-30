@@ -1,0 +1,54 @@
+name: flutter_application_1
+description: "A new Flutter project."
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+# Ensure dependency_overrides is outside dependencies section
+dependency_overrides:
+  collection: ^1.19.0
+  material_color_utilities: ^0.12.0
+  meta: ^1.16.0
+  leak_tracker: ^10.0.7
+  leak_tracker_flutter_testing: ^3.0.8
+  stack_trace: ^1.12.0
+  string_scanner: ^1.3.0
+  test_api: ^0.7.3
+  vm_service: ^14.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: "^0.14.1"
+  flutter_lints: ^2.0.0  # Or the latest version
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "images/spldcm6oih92w5jmwtnq.png"
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "images/spldcm6oih92w5jmwtnq.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: " "
+    icon_size: 48
+  macos:
+    generate: true
+    image_path: "images/spldcm6oih92w5jmwtnq.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - images/
